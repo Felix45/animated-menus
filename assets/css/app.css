@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #ddd;
+  --red: #ec5242;
+  --menu: rgba(169, 60, 40, 0.85);
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+header {
+  box-shadow: 5px 5px 5px var(--gray);
+}
+
+.fa-close {
+  animation: close 2s ease-in;
+}
+
+@keyframes close {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.menu ul {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  overflow-x: hidden;
+  background-color: var(--menu);
+  backdrop-filter: blur(4.5px);
+  transition: width 0.3s;
+}
+
+.menu .menu-slide {
+  width: 80%;
+}
+
+.menu li a {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px dotted var(--white);
+}
+
+.menu li a:hover {
+  background-color: var(--red);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.bg-dark {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.d-none {
+  display: none;
+}
